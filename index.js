@@ -34,7 +34,7 @@ var lang
       case "jp": lang = langfile.jp.index;
         break;
       default: {
-      log.warn("warn", "Hiện Chỉ Hỗ Trợ 4 Loại Ngôn Ngữ VI, EN, TH & JP, Tự Fix Bằng Cách Tìm Và Xoá Tệp Kaiser_Config.json")
+      log.warn("warn", "Hiện Chỉ Hỗ Trợ 4 Loại Ngôn Ngữ VI, EN, TH & JP, Tự Fix Bằng Cách Tìm Và Xoá Tệp Trankhuong_Config.json")
       process.exit(0)
       }
     }
