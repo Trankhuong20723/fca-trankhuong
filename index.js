@@ -34,7 +34,7 @@ var lang
       case "jp": lang = langfile.jp.index;
         break;
       default: {
-      log.warn("warn", "Hiện Chỉ Hỗ Trợ 4 Loại Ngôn Ngữ VI, EN, TH & JP, Tự Fix Bằng Cách Tìm Và Xoá Tệp Trankhuong_Config.json")
+      log.warn("warn", "Hiện Chỉ Hỗ Trợ 4 Loại Ngôn Ngữ VI, EN, TH & JP, Tự Fix Bằng Cách Tìm Và Xoá Tệp Kaiser_Config.json")
       process.exit(0)
       }
     }
@@ -311,7 +311,7 @@ function makeLogin(jar, email, password, loginOptions, callback, prCallback) {
             jar.setCookie(utils.formatCookie(cookieData, "facebook"), "https://www.facebook.com");
         });
         // ---------- Very Hacky Part Ends -----------------
-logger(global.fca.languages.login, "[ FCA - KAISER ]");
+logger(global.fca.languages.login, "[ Fca - Trankhuong ]");
         return utils
             .post("https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110", jar, form, loginOptions)
             .then(utils.saveCookies(jar))
@@ -619,7 +619,7 @@ require('dotenv').config({ path: './../.env' });
     axios.get('https://raw.githubusercontent.com/Trankhuong20723/Trankhuong/main/package.json').then(async (res) => {
         const localbrand = JSON.parse(readFileSync('./node_modules/fca-trankhuong/package.json')).version;
             if (localbrand != res.data.version) {
-                        log.warn("UPDATE > ",`${global.fca.languages.newVersion}${JSON.parse(readFileSync('./node_modules/fca-trankhuong/package.json')).version} => ${res.data.version}`);
+                        log.warn("UPDATE > ",`${global.fca.languages.newVersion}${JSON.parse(readFileSync('./node_modules/fca-fca-trankhuong/package.json')).version} => ${res.data.version}`);
                         log.warn("UPDATE > ",`${global.fca.languages.autoUpdate}`);
                             try {
                                 execSync('npm install fca-trankhuong@latest', { stdio: 'inherit' });
