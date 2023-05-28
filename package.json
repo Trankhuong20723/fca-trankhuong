@@ -22,8 +22,7 @@
   "bugs": {
     "url": "fb.me/Trankhuong.2072000"
   },
-  "author": "Trần Khương x Trankhuong
-",
+  "author": "Trần Khương x Trankhuong",
   "license": "MIT",
   "dependencies": {
     "aes-js": "latest",
