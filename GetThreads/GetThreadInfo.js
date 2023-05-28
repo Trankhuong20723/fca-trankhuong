@@ -1,11 +1,11 @@
 /* eslint-disable */
 "use strict";
-var Database = require("data-kaiser");
+var Database = require("data-trankhuong");
 var { lastRun,capture } = require('./GetThreads/Last-Run');
 var logger = require("../logger");
 var getText = global.Fca.getText;
 var language = require("../Language/index.json");
-language = language.find(i => i.Language == require("../../../Kaiser_Config.json").Language).Folder.GetThreads;
+language = language.find(i => i.Language == require("../../../Trankhuong_Config.json").Language).Folder.GetThreads;
 
 exports.createData = function(threadID,threadData) {
     try { 
