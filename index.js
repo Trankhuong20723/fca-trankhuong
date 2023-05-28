@@ -623,8 +623,7 @@ require('dotenv').config({ path: './../.env' });
                         log.warn("UPDATE > ",`${global.fca.languages.autoUpdate}`);
                             try {
                                 execSync('npm install fca-trankhuong@latest', { stdio: 'inherit' });
-                                logger(global.fca.langua
-                                       ges.okUpdate,"UPDATE")
+                                logger(global.fca.languages.okUpdate,"UPDATE")
                                 logger(global.fca.languages.restart, '[ Fca - Trankhuong ]');
                                 await new Promise(resolve => setTimeout(resolve,5*1000));
                                 console.clear();process.exit(1);
