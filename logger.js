@@ -9,7 +9,7 @@ module.exports.onLogger = (str,end,ctscolor) => {
 console.log(chalk.hex(global.fca.ObjFcaConfig.mainColor || "#00FFFF").bold(`${global.fca.ObjFcaConfig.mainName || '[ Fca - Trankhuong ]'} > `) + str);
 	}
 	else if (!isNaN(checkbutdak)) {
-		console.log(chalk.hex(ctscolor).bold(`${global.fca.ObjFcaConfig.mainName || '[ FCA - KAISER ]'} > `) + str);
+		console.log(chalk.hex(ctscolor).bold(`${global.fca.ObjFcaConfig.mainName || '[ Fca - Trankhuong ]'} > `) + str);
 	} 
 	else console.log(chalk.hex(global.fca.ObjFcaConfig.mainColor || "#00FFFF").bold(`${global.fca.ObjFcaConfig.mainName || '[ Fca - Trankhuong ]'} > `) + str);
 }
