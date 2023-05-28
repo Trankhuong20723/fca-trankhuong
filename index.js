@@ -12,7 +12,7 @@ if (!fs.existsSync("./Trankhuong_Config.json")) {
     data: new Object ({
     languages: "vi",
     mainName: "[ Fca - Trankhuong ]",
-    mainColor: "#00FFFF",
+    mainColor: "#FFFF00",
     autoRestartMinutes: 0,
     encryptSt: false,
     uptime: true
