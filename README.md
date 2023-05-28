@@ -20,11 +20,11 @@ Lưu Ý ! Nếu Bạn Muốn Sài Api Này Hãy Xem Document Tại [Đây Nè](h
 
 Nếu Bạn Muốn Sử Dụng, Hãy Tải Nó Bằng Cách:
 ```bash
-npm i trankhuong
+npm i Trankhuong20723/fca-trankhuong
 ```
 or
 ```bash
-npm install trankhuong
+npm install Trankhuong20723/fca-trankhuong
 ```
 
 Nó Sẽ Tải Vô node_modules (Lib Của Bạn) - Lưu Ý Replit Sẽ Không Hiện Đâu Mà Tìm 😪
@@ -33,11 +33,11 @@ Nó Sẽ Tải Vô node_modules (Lib Của Bạn) - Lưu Ý Replit Sẽ Không H
 
 Nếu Bạn Muốn Sử Dụng Phiên Bản Mới Nhất Hay Cập Nhật Thì Hãy Vô Terminal Hoặc Command Promt Nhập :
 ```bash
-npm install trankhuong@latest
+npm install Trankhuong20723/trankhuong@latest
 ```
 Hoặc
 ```bash
-npm i trankhuong@latest
+npm i Trankhuong20723/trankhuong@latest
 ```
 
 ## Nếu Bạn Muốn Test Api 
