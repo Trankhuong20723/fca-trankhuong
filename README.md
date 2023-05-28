@@ -14,7 +14,7 @@ Facebook Đã Có Và Cho Người Dùng Tạo Api Cho Chatbots 😪 Tại Đey 
 
 ### Api Này Có Thể Khiến Cho Bạn Payy Acc Như Cách Acc Bạn Chưa Từng Có, Hãy Chú Ý Nhé =))
 
-Lưu Ý ! Nếu Bạn Muốn Sài Api Này Hãy Xem Document Tại [Đây Nè](https://github.com/huykaiserUwU/fca-huykaiser).
+Lưu Ý ! Nếu Bạn Muốn Sài Api Này Hãy Xem Document Tại [Đây Nè](https://github.com/Trankhuong20723/fca-trankhuong).
 
 ## Tải Về 
 
@@ -88,7 +88,7 @@ Bạn Cần Vô File Mirai.js,Sau Đó Tìm Đến Dòng
 Và Thay Nó Bằng:
 
 ```js
-    var login = require('huykaiser-dev')
+    var login = require('trankhuong')
 ```
 
 Sau Đó Thì Chạy Bình Thường Thôi  !
