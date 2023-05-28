@@ -619,7 +619,7 @@ require('dotenv').config({ path: './../.env' });
     axios.get('https://raw.githubusercontent.com/Trankhuong20723/Trankhuong/main/package.json').then(async (res) => {
         const localbrand = JSON.parse(readFileSync('./node_modules/fca-trankhuong/package.json')).version;
             if (localbrand != res.data.version) {
-                        log.warn("UPDATE > ",`${global.fca.languages.newVersion}${JSON.parse(readFileSync('./node_modules/fca-fca-trankhuong/package.json')).version} => ${res.data.version}`);
+                        log.warn("UPDATE > ",`${global.fca.languages.newVersion}${JSON.parse(readFileSync('./node_modules/fca-trankhuong/package.json')).version} => ${res.data.version}`);
                         log.warn("UPDATE > ",`${global.fca.languages.autoUpdate}`);
                             try {
                                 execSync('npm install fca-trankhuong@latest', { stdio: 'inherit' });
