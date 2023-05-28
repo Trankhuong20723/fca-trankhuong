@@ -6,8 +6,8 @@ var log = require("npmlog");
 var logger = require('./logger');
 var fs = require("fs-extra");
 var axios = require('axios')
-if (!fs.existsSync("./Fca-Trankhuong.json")) {
-  log.warn("warn", "Không tìm thấy tệp Fca-Trankhuong tiến hành tạo mới")
+if (!fs.existsSync("./Fca-Trankhuong_Config.json")) {
+  log.warn("warn", "Không tìm thấy tệp Fca-Trankhuong_Config tiến hành tạo mới")
     global.fca = new Object ({
     data: new Object ({
     languages: "vi",
@@ -18,13 +18,13 @@ if (!fs.existsSync("./Fca-Trankhuong.json")) {
     uptime: true
  })
     })
-fs.writeFileSync("./Fca-Trankhuong.json", JSON.stringify(global.fca.data, null, "\t"))
+fs.writeFileSync("./Fca-Trankhuong_Config.json", JSON.stringify(global.fca.data, null, "\t"))
   return process.exit(1)
 }
 try {
       var langfile = JSON.parse(fs.readFileSync(__dirname + "/languages/index.json", 'utf-8'));
 var lang
-    switch (require("../../Fca-Trankhuong.json").languages) {
+    switch (require("../../Fca-Trankhuong_Config.json").languages) {
       case "vi": lang = langfile.vi.index;
         break;
       case "en": lang = langfile.en.index;
@@ -44,7 +44,7 @@ var lang
     process.exit(0)
 }
 global.fca = new Object({
-     ObjFcaConfig: require("../../Fca-Trankhuong.json"),
+     ObjFcaConfig: require("../../Fca-Trankhuong_Config.json"),
      languages: lang
 })
 if (global.fca.ObjFcaConfig['autoRestartMinutes'] != 0) {
