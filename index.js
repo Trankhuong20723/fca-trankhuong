@@ -6,8 +6,8 @@ var log = require("npmlog");
 var logger = require('./logger');
 var fs = require("fs-extra");
 var axios = require('axios')
-if (!fs.existsSync("./Fca-Trankhuong_Config.json")) {
-  log.warn("warn", "Không tìm thấy tệp Fca-Trankhuong_Config tiến hành tạo mới")
+if (!fs.existsSync("./Trankhuong_Config.json")) {
+  log.warn("warn", "Không tìm thấy tệp Trankhuong_Config tiến hành tạo mới")
     global.fca = new Object ({
     data: new Object ({
     languages: "vi",
@@ -18,13 +18,13 @@ if (!fs.existsSync("./Fca-Trankhuong_Config.json")) {
     uptime: true
  })
     })
-fs.writeFileSync("./Fca-Trankhuong_Config.json", JSON.stringify(global.fca.data, null, "\t"))
+fs.writeFileSync("./Trankhuong_Config.json", JSON.stringify(global.fca.data, null, "\t"))
   return process.exit(1)
 }
 try {
       var langfile = JSON.parse(fs.readFileSync(__dirname + "/languages/index.json", 'utf-8'));
 var lang
-    switch (require("../../Fca-Trankhuong_Config.json").languages) {
+    switch (require("../../Trankhuong_Config.json").languages) {
       case "vi": lang = langfile.vi.index;
         break;
       case "en": lang = langfile.en.index;
@@ -34,7 +34,7 @@ var lang
       case "jp": lang = langfile.jp.index;
         break;
       default: {
-      log.warn("warn", "Hiện chỉ hỗ trợ 4 loại ngôn ngữ VI, EN, TH & JP, tự fix bằng cách tìm và xoá tệp Fca-Trankhuong.json")
+      log.warn("warn", "Hiện chỉ hỗ trợ 4 loại ngôn ngữ VI, EN, TH & JP, tự fix bằng cách tìm và xoá tệp Trankhuong_Config.json")
       process.exit(0)
       }
     }
@@ -44,7 +44,7 @@ var lang
     process.exit(0)
 }
 global.fca = new Object({
-     ObjFcaConfig: require("../../Fca-Trankhuong_Config.json"),
+     ObjFcaConfig: require("../../Trankhuong_Config.json"),
      languages: lang
 })
 if (global.fca.ObjFcaConfig['autoRestartMinutes'] != 0) {
