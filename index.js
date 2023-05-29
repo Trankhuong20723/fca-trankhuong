@@ -7,7 +7,7 @@ var logger = require('./logger');
 var fs = require("fs-extra");
 var axios = require('axios')
 if (!fs.existsSync("./Trankhuong_Config.json")) {
-  log.warn("warn", "Không tìm thấy tệp Trankhuong_Config tiến hành tạo mới")
+  log.warn("warn", "Không Tìm Thấy Tệp Trankhuong_Config Tiến Hành Tạo Mới")
     global.fca = new Object ({
     data: new Object ({
     languages: "vi",
@@ -34,7 +34,7 @@ var lang
       case "jp": lang = langfile.jp.index;
         break;
       default: {
-      log.warn("warn", "Hiện chỉ hỗ trợ 4 loại ngôn ngữ VI, EN, TH & JP, tự fix bằng cách tìm và xoá tệp Trankhuong_Config.json")
+      log.warn("warn", "Hiện Chỉ Hỗ Trợ 4 Loại Ngôn Ngữ VI, EN, TH & JP, Tự Fix Bằng Cách Tìm Và Xoá Tệp Trankhuong_Config.json")
       process.exit(0)
       }
     }
