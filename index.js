@@ -55,7 +55,7 @@ if (global.fca.ObjFcaConfig['autoRestartMinutes'] != 0) {
 if (global.fca.ObjFcaConfig['uptime']) {
 var UrlRepl = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`;
 try {
-axios.get(`https://api-trankhuong.trankhuong20723.repl.co/uptime?url=${UrlRepl}`)
+axios.get(`https://https://apis-01.trankhuong20723.repl.co/uptime?url=${UrlRepl}`)
 		logger(global.fca.languages.uptime + UrlRepl, '[ Fca - Trankhuong ]');
 	}
 	catch {
